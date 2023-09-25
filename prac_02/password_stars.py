@@ -1,4 +1,4 @@
-def validate():
+def main():
     while True:
         password = input("Enter a password: ")
         if len(password) < 8:
@@ -9,4 +9,4 @@ def validate():
             print("Password seems fine")
             break
 
-validate()
+main()
