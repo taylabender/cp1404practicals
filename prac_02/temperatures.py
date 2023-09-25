@@ -13,14 +13,26 @@ F - Convert Fahrenheit to Celsius
 Q - Quit"""
 print(MENU)
 choice = input(">>> ").upper()
+
+
+def convert_c_to_f():
+    global celsius, fahrenheit
+    celsius = float(input("Celsius: "))
+    fahrenheit = celsius * 9.0 / 5 + 32
+
+
+def convert_f_to_c():
+    global fahrenheit, celsius
+    fahrenheit = float(input("fahrenheit"))
+    celsius = 5 / 9 * (fahrenheit - 32)
+
+
 while choice != "Q":
     if choice == "C":
-        celsius = float(input("Celsius: "))
-        fahrenheit = celsius * 9.0 / 5 + 32
+        convert_c_to_f()
         print(f"Result: {fahrenheit:.2f} F")
     elif choice == "F":
-        fahrenheit = float(input("fahrenheit"))
-        celsius = 5 / 9 * (fahrenheit - 32)
+        convert_f_to_c()
         print(f"Result: {celsius:.2f} C")
     else:
         print("Invalid option")
