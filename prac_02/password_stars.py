@@ -1,9 +1,8 @@
-'''
+"""
 Create program for a password with min length,
 and display in asterisks.
 Minimum length = 8
-'''
-import re
+"""
 
 
 # main() function
