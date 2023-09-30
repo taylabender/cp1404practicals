@@ -25,9 +25,20 @@ any number of numbers.
 # Task 1
 FILENAME = "name.txt"
 name = input("Enter your name: ")
-
 out_file = open(FILENAME, "w")
-print(name, file=out_file)
 
+
+# Task 2
+print(f"Your name is: {name}", file=out_file)
 out_file.close()
+
+
+# Task 3
+in_file = open("numbers.txt", "r")
+number1 = int(in_file.readline())
+number2 = int(in_file.readline())
+print(number1 + number2)
+
+in_file.close()
+
 
