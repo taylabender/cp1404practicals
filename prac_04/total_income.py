@@ -21,5 +21,4 @@ def print_report(incomes):
         total += income
         print(f"Month {month:2} - Income: ${income:10.2f} Total: ${total:10.2f}")
 
-
 main()
