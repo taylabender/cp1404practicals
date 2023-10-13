@@ -13,6 +13,6 @@ print("colour names: \n Amber \n Aqua \n Ash Grey \n Baby Pink \n Banana Yellow 
 colour_name = input("Enter colour name for code information: ")
 
 while colour_name != "":
-    print(f" The code for \"{colour_name}\" is {NAME_TO_CODE.get(colour_name)}")
+    print(f" The code for {colour_name} is {NAME_TO_CODE.get(colour_name)}")
     colour_name = input("Enter colour name: ")
 
